@@ -54,6 +54,14 @@ Un universo gráfico completo, diseñado desde cero: sistema visual (logotipo, p
 
 ---
 
+## IA, MCP y automatización
+
+- **Conector MCP propio.** Un servidor MCP para que Claude y otros asistentes de IA consulten la base de anuncios con la cuenta del usuario. El acceso por llave ya funciona; la versión con OAuth, pensada para directorios de conectores, revisa el plan en cada llamada y corta el acceso si la persona deja de pagar. Está probada y todavía no se publica.
+- **IA con respaldo.** Gemini, Groq, OpenAI, DeepSeek, OpenRouter y Anthropic detrás de una sola capa. Si un modelo falla o llega a su límite, la llamada pasa al siguiente, y cada uso queda registrado con sus tokens y su costo.
+- **Flujos automáticos.** 16 procesos programados: cosecha de anuncios y marcas, transcripción, lecciones, limpieza, cobros con tarjeta, recordatorios y resumen diario. Mensajes de WhatsApp por una bandeja de salida que procesa n8n, correos transaccionales con sus eventos y respaldo diario de la base.
+
+---
+
 ## Arquitectura
 
 Ver [`docs/arquitectura.md`](docs/arquitectura.md).
