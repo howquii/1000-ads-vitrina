@@ -1,0 +1,11 @@
+{
+  "name": "1000-ads-vitrina",
+  "version": "1.0.0",
+  "description": "Vitrina técnica de 1000% Ads y utilidades abiertas: lector tolerante de JSON de IA y señales de anuncios ganadores de la Biblioteca de Meta.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "test": "node --test test/*.test.ts"
+  }
+}
